@@ -20,6 +20,7 @@ app.use(
     credentials: true, // set to true if using cookies or auth
   })
 );
+
 app.use("/api/v1/", authRoutes);
 
 connectToDatabase();
