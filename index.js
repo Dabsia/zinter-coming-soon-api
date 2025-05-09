@@ -14,7 +14,7 @@ app.use(morgan("dev"));
 // ✅ CORS Setup
 app.use(
   cors({
-    origin: "http://localhost:3000", // your frontend
+    origin: "*", // your frontend
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // set to true if using cookies or auth
