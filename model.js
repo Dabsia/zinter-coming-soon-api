@@ -1,10 +1,19 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-  email: {
+  fullname: {
     type: String,
-    unique: [true, "Email must be unique"],
     required: true,
+  },
+  number: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  comingWithGuest: {
+    type: Boolean,
+    required: true,
+    default: false,
   },
 });
 
